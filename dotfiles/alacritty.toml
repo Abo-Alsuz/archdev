@@ -1,0 +1,30 @@
+[font]
+size = 13.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[colors.primary]
+background = "#1a1a1a"
+foreground = "#d4d4d4"
+
+[colors.normal]
+black =   "#3a3a3a"
+red =     "#cc6666"
+green =   "#7aab7a"
+yellow =  "#d4a96a"
+blue =    "#6a8fbf"
+magenta = "#9a7abf"
+cyan =    "#6aabab"
+white =   "#c0c0c0"
+
+[colors.bright]
+black =   "#555555"
+red =     "#cc6666"
+green =   "#7aab7a"
+yellow =  "#d4a96a"
+blue =    "#6a8fbf"
+magenta = "#9a7abf"
+cyan =    "#6aabab"
+white =   "#d4d4d4"
