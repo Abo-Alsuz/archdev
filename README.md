@@ -36,6 +36,7 @@ bash install.sh
 - Nvidia drivers (auto-detected)
 
 ## Structure
+```
 archdev/
 ├── install.sh
 ├── scripts/
@@ -56,7 +57,7 @@ archdev/
 │   └── plugins/carbon.lua
 ├── alacritty.toml
 └── starship.toml
-
+```
 ## Requirements
 
 - Fresh Arch Linux install
