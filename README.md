@@ -33,7 +33,7 @@ bash install.sh
 - Neovim + LazyVim + Carbon theme
 - IDE of choice (VSCode, VSCodium, Zed, Cursor)
 - DE/WM of choice (Hyprland, Sway, KDE, GNOME, Cinnamon) + SDDM
-- Nvidia drivers (auto-detected)
+- ~~Nvidia drivers (auto-detected)~~ Still working on the nvidia setup script.
 
 ## Structure
 ```
