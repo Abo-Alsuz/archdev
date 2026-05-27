@@ -26,9 +26,8 @@ read -p "Setup ZSH? (3 plugins + Starship) [y/n]: " answer
 read -p "Install development kit? (rust, go, lua, python, nodejs) [y/n]: " answer
 [[ "$answer" == "y" ]] && bash scripts/devkit.sh
 
-read -p "Install Neovim + NvChad? [y/n]: " answer
+read -p "Install Neovim + Lazyvim with Carbon theme? [y/n]: " answer
 [[ "$answer" == "y" ]] && bash scripts/nvim.sh
-
 
 echo ""
 echo "╔═══════════════════════════════════╗"
