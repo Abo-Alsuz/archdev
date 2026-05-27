@@ -26,8 +26,20 @@ read -p "Setup ZSH? (3 plugins + Starship) [y/n]: " answer
 read -p "Install development kit? (rust, go, lua, python, nodejs) [y/n]: " answer
 [[ "$answer" == "y" ]] && bash scripts/devkit.sh
 
-read -p "Install Neovim + Lazyvim with Carbon theme? [y/n]: " answer
+read -p "Install Neovim + LazyVim with Carbon theme? [y/n]: " answer
 [[ "$answer" == "y" ]] && bash scripts/nvim.sh
+
+read -p "Install an IDE? [y/n]: " answer
+[[ "$answer" == "y" ]] && bash scripts/ide.sh
+
+read -p "Install a DE/WM? [y/n]: " answer
+[[ "$answer" == "y" ]] && bash scripts/wm.sh
+
+read -p "Setup Nvidia drivers? [y/n]: " answer
+[[ "$answer" == "y" ]] && bash scripts/nvidia.sh
+
+read -p "Apply dotfiles? (Alacritty carbon theme) [y/n]: " answer
+[[ "$answer" == "y" ]] && bash scripts/dotfiles.sh
 
 echo ""
 echo "╔═══════════════════════════════════╗"
