@@ -1,8 +1,14 @@
 #!/bin/bash
+source "$(dirname "$0")/scripts/init-helpers.sh"
 
 echo "╔═══════════════════════════════════╗"
 echo "║   ArchDev Bootstrap Installer     ║"
 echo "╚═══════════════════════════════════╝"
+echo ""
+echo "Detected init system: $INIT_SYSTEM"
+if [ "$INIT_SYSTEM" = "unknown" ]; then
+  echo "Warning: Unknown init system detected. Some features may not work correctly."
+fi
 echo ""
 
 bash scripts/aur.sh

@@ -1,11 +1,15 @@
 #!/bin/bash
-if systemctl --user is-active --quiet pipewire; then
+source "$(dirname "$0")/init-helpers.sh"
+
+if check_user_service pipewire; then
 	echo "PipeWire is already running,"
 	echo "Stopping audio setup..."
-	exit 0 
+	exit 0
 fi
 
 echo "Setting up PipeWire audio."
 sudo pacman -S --noconfirm pipewire pipewire-alsa wireplumber pipewire-pulse pipewire-jack wiremixer
-sudo systemctl enable --now pipewire wireplumber pipewire-pulse
+enable_user_service pipewire
+enable_service wireplumber
+enable_service pipewire-pulse
 echo "Audio setup Complete!"

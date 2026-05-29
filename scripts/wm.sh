@@ -1,8 +1,9 @@
 #!/bin/bash
+source "$(dirname "$0")/init-helpers.sh"
 
 install_sddm() {
   sudo pacman -S --noconfirm sddm
-  sudo systemctl enable sddm
+  enable_service sddm
 }
 
 echo "╔═══════════════════════════════════╗"
