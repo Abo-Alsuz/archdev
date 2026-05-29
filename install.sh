@@ -41,6 +41,9 @@ read -p "Setup Nvidia drivers? [y/n]: " answer
 read -p "Apply dotfiles? (Alacritty carbon theme) [y/n]: " answer
 [[ "$answer" == "y" ]] && bash scripts/dotfiles.sh
 
+read -p "Install Browser? [y/n]: " answer
+[[ "$answer" == "y" ]] && bash scripts/browser.sh
+
 echo ""
 echo "╔═══════════════════════════════════╗"
 echo "║      ArchDev setup complete!      ║"

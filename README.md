@@ -34,6 +34,7 @@ bash install.sh
 - IDE of choice (VSCode, VSCodium, Zed, Cursor)
 - DE/WM of choice (Hyprland, Sway, KDE, GNOME, Cinnamon) + SDDM
 - Nvidia drivers (auto-detected).
+- Browser
 
 ## Structure
 ```
@@ -48,8 +49,10 @@ archdev/
 │   ├── zsh.sh
 │   ├── nvim.sh
 │   ├── ide.sh
-│   ├── wm.sh
-│   └── nvidia.sh
+|   ├── wm.sh
+|   ├── browser.sh
+|   └── nvidia.sh
+|
 └── dotfiles/
 ├── nvim/
 │   ├── colors/carbon.lua
