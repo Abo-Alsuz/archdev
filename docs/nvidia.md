@@ -50,4 +50,4 @@ When targeting a legacy branch like **580xx**, all driver ecosystem utilities mu
 * **Userland Utilities:** `nvidia-580xx-utils`
 * **32-bit Compatibility Layer:** `lib32-nvidia-580xx-utils` *(Required for Steam / Wine if Multilib is active)*
 
-# and yes made this with google Gemini.
+# and yes I made this with google Gemini.
